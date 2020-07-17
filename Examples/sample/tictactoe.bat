@@ -25,12 +25,12 @@ set moves=0
 
 :Start
 cls
-echo.                                                                    *******
-echo.                                                                    *%a1% %a2% %a3%*
-echo.                                                                    *%a4% %a5% %a6%*
-echo.                                                                    *%a7% %a8% %a9%*
-echo.                                                                    *******
-echo Enter a number:
+echo.                               *******
+echo.                               *%a1% %a2% %a3%*
+echo.                               *%a4% %a5% %a6%*
+echo.                               *%a7% %a8% %a9%*
+echo.                               *******
+echo.                           Enter a number:
 @CHOICE /C:123456789 /N
 if errorlevel 9 goto d9
 if errorlevel 8 goto d8
