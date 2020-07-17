@@ -26,7 +26,7 @@ You need to use these commands to declare variables for the game in the core.bat
         set x5y5= (Set the particular position with a model, you can change the postion from x1y1 to x11y15)
         set xspawn= (Set the spawn postion in the x coordinate)
         set yspawn= (Set the spawn postion in the x coordinate)
-        set walllimit1= (Asign walllimit1 variable as x2y3 to set x2y3 to be a wall, you can use these wall ids from walllimit1 to walllimit165)
+        set walllimit1= (Asign walllimit1 variable to x2y3 to make x2y3 a wall. Wall limits are from walllimit1 to walllimit165)
         
 <br/>
 <b>Note: Position variables are from x1y1 to x11y15</b>
