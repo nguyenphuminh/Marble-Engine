@@ -1,5 +1,5 @@
 <div align="center">
-    <div style="font-family:consolas; color:darkgray">MARBLE</div>
+    <div style="font-family:consolas; color:darkgray; font-size:200%"><b>MARBLE</b></div>
     <img src="https://github.com/nguyenphuminh/Marble-Engine/blob/master/logo.png">
     <div><b>A simple, lightweight maze game engine created in Batch</b></div>
 </div>
