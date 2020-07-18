@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://github.com/nguyenphuminh/Marble-Engine/blob/master/logo.png">
-<div>A simple, lightweight maze game engine created in Batch</div>
+    <div><b>A simple, lightweight maze game engine created in Batch</b></div>
 </div>
 
 ## What is Marble ?
