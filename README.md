@@ -9,7 +9,7 @@ Marble is a simple, lightweight maze game engine created in Batch. You can creat
 This is the full source code of Marble, hope you like it!
 
 ## Usage
-### To start using Marble, you need to call the engine file by typing:
+<b>To start using Marble, you need to call the engine file by typing:</b>
 
     call engine.bat
 
