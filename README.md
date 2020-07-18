@@ -10,7 +10,9 @@ This is the full source code of Marble, hope you like it!
 
 ## Usage
 To start using Marble, you need to call the engine file by typing:
+
     call engine.bat
+
 <br/>
 You need to use these commands to declare variables for the game in the core.bat file (Remember to put the core.bat file in the same directory as the engine.bat file).
 <br/>
@@ -44,7 +46,7 @@ You need to use these commands to declare variables for the game in the core.bat
 <li>Content Writer: Nguyen Phu Minh</li>
 
 ## Contributing guidelines
-Please read the contributing guidelines <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/master/CONTRIBUTING.md">here</a>
+Please read the contributing guidelines <a href="https://github.com/nguyenphuminh/Marble-Engine/tree/master/.github/CONTRIBUTING.md">here</a>
 
 ## License and Copyrights
 This game engine/framework is licensed under the MIT License
