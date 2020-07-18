@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/nguyenphuminh/Marble-Engine/tree/master/Resources/Branding/logo.png">
+    <img src="Resources/Branding/logo.png">
     <div><b>A simple, lightweight maze game engine created in Batch</b></div>
 </div>
 
