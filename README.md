@@ -48,7 +48,7 @@ This is the full source code of Marble, hope you like it!
 <b>The character, wall, floortexture, xspawn, yspawn, walllimit(number), winningpost are necessary variables which are not pre-declared.</b> 
 
 <br/>
-#### Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
+### Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
 
     sound play "soundfile"
 
