@@ -9,12 +9,12 @@ Marble is a simple, lightweight maze game engine created in Batch. You can creat
 This is the full source code of Marble, hope you like it!
 
 ## Usage
-To start using Marble, you need to call the engine file by typing:
+### To start using Marble, you need to call the engine file by typing:
 
     call engine.bat
 
 <br/>
-You need to use these commands to declare variables for the game in the core.bat file (Remember to put the core.bat file in the same directory as the engine.bat file).
+### You need to use these commands to declare variables for the game in the core.bat file (Remember to put the core.bat file in the same directory as the engine.bat file).
 <br/>
 
     ::Set the type of game you want to make, you can change the value to tictactoe to create a Tic Tac Toe game
@@ -48,13 +48,14 @@ You need to use these commands to declare variables for the game in the core.bat
 <b>The character, wall, floortexture, xspawn, yspawn, walllimit(number), winningpost are necessary variables which are not pre-declared.</b> 
 
 <br/>
-Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
-sound play "soundfile"
+#### Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
+
+    sound play "soundfile"
 
 <br/>
-Marble's ERROR NAME(s)
-
-
+### Marble's ERROR NAME(s)
+<br/>
+<br/>
 |  Name   |   Meaning          |
 | ------- | ------------------ |
 |  0a1    | Missing files      |
