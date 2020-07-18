@@ -1,7 +1,9 @@
+@echo off
+title TicTacToe
 :tictactoe
-if "%ttt_scenewhenwin%" == "" set ttt_scenewhenwin=tictactoe
-if "%ttt_scenewhenlose%" == "" set ttt_scenewhenlose=tictactoe
-if "%ttt_scenewhendraw%" == "" set ttt_scenewhendraw=tictactoe
+if "%ttt_scenewhenwin%" == "" set ttt_scenewhenwin=winscene
+if "%ttt_scenewhenlose%" == "" set ttt_scenewhenlose=losescene
+if "%ttt_scenewhendraw%" == "" set ttt_scenewhendraw=drawscene
 cls
 set a1=1
 set a2=2
@@ -257,3 +259,17 @@ goto %ttt_scenewhenlose%
 :draw
 cls
 goto %ttt_scenewhendraw%
+
+:winscene
+echo. You win!
+pause
+goto tictactoe
+:losescene
+echo. You lose!
+pause
+goto tictactoe
+
+:drawscene
+echo. Draw!
+pause
+goto tictactoe
