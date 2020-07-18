@@ -69,6 +69,9 @@ This is the full source code of Marble, hope you like it!
 <li>Tester: Nguyen Phu Minh</li>
 <li>Content Writer: Nguyen Phu Minh</li>
 
+## No coding editor
+That's right. Marble has a built-in no coding editor. But you can still use the normal engine, the no coding editor is just an optional path to approach Marble
+
 ## Contributing guidelines
 Please read the contributing guidelines <a href="https://github.com/nguyenphuminh/Marble-Engine/tree/master/.github/CONTRIBUTING.md">here</a>
 
