@@ -1,9 +1,5 @@
-set title=A sample for Marble Engine
-set color=0f
 set soption=.
 set soundwhenwin=win.wav
-set width=70
-set height=30
 set winningpost=x5y5
 set character=G
 set wall=$

@@ -1,25 +1,9 @@
 @echo off
 call core.bat
 call redofloor.bat
-call preload.bat
-if "%color%" == "" (
-set color=0a
-)
-if "%title%" == "" (
-set title=A sample of Marble
-)
-if "%width%" == "" (
-set width=70
-)
-if "%height%" == "" (
-set height=30
-)
-if "%xspawn%" == "" (
-set xspawn=1
-)
-if "%yspawn%" == "" (
-set yspawn=1
-)
+for /L %%A in (1,1,165) DO (set walllimit%%A=0)
+if "%xspawn%" == "" set xspawn=1
+if "%yspawn%" == "" set yspawn=1
 color %color%
 title %title%
 mode con cols=%width% lines=%height%
@@ -87,469 +71,159 @@ goto initsetup
 call tictactoe.bat
 :wallaction
 cls
-if %walllimit1% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit2% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit3% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit4% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit5% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit6% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit7% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit8% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit9% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit10% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit11% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit12% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit13% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit14% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit15% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit16% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit17% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit18% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit19% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit20% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit21% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit22% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit23% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit24% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit25% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit26% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit27% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit28% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit29% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit30% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit31% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit32% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit33% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit34% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit35% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit36% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit37% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit38% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit39% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit40% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit41% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit42% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit43% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit44% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit45% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit46% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit47% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit48% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit49% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit50% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit51% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit52% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit53% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit54% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit55% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit56% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit57% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit58% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit59% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit60% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit61% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit62% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit63% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit64% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit65% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit66% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit67% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit68% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit69% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit70% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit71% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit72% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit73% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit74% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit75% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit76% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit77% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit78% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit79% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit80% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit81% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit82% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit83% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit84% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit85% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit86% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit87% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit88% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit89% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit90% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit91% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit92% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit93% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit94% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit95% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit96% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit97% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit98% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit99% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit100% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit101% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit102% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit103% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit104% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit105% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit106% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit107% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit108% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit109% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit110% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit111% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit112% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit113% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit114% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit115% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit116% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit117% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit118% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit119% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit120% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit121% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit123% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit124% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit125% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit126% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit127% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit128% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit129% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit130% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit131% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit132% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit133% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit134% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit135% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit136% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit137% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit138% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit139% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit140% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit150% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit151% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit152% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit153% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit154% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit155% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit156% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit157% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit158% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit159% == x%xcoord%y%ycoord%  (
-%action%
-)
-if %walllimit160% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit161% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit162% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit163% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit164% == x%xcoord%y%ycoord%   (
-%action%
-)
-if %walllimit165% == x%xcoord%y%ycoord%   (
-%action%
-)
+if %walllimit1% == x%xcoord%y%ycoord% %action%
+if %walllimit2% == x%xcoord%y%ycoord% %action%
+if %walllimit3% == x%xcoord%y%ycoord% %action%
+if %walllimit4% == x%xcoord%y%ycoord% %action%
+if %walllimit5% == x%xcoord%y%ycoord% %action%
+if %walllimit6% == x%xcoord%y%ycoord% %action%
+if %walllimit7% == x%xcoord%y%ycoord% %action%
+if %walllimit8% == x%xcoord%y%ycoord% %action%
+if %walllimit9% == x%xcoord%y%ycoord% %action%
+if %walllimit10% == x%xcoord%y%ycoord% %action%
+if %walllimit11% == x%xcoord%y%ycoord% %action%
+if %walllimit12% == x%xcoord%y%ycoord% %action%
+if %walllimit13% == x%xcoord%y%ycoord% %action%
+if %walllimit14% == x%xcoord%y%ycoord% %action%
+if %walllimit15% == x%xcoord%y%ycoord% %action%
+if %walllimit16% == x%xcoord%y%ycoord% %action%
+if %walllimit17% == x%xcoord%y%ycoord% %action%
+if %walllimit18% == x%xcoord%y%ycoord% %action%
+if %walllimit19% == x%xcoord%y%ycoord% %action%
+if %walllimit20% == x%xcoord%y%ycoord% %action%
+if %walllimit21% == x%xcoord%y%ycoord% %action%
+if %walllimit22% == x%xcoord%y%ycoord% %action%
+if %walllimit23% == x%xcoord%y%ycoord% %action%
+if %walllimit24% == x%xcoord%y%ycoord% %action%
+if %walllimit25% == x%xcoord%y%ycoord% %action%
+if %walllimit26% == x%xcoord%y%ycoord% %action%
+if %walllimit27% == x%xcoord%y%ycoord% %action%
+if %walllimit28% == x%xcoord%y%ycoord% %action%
+if %walllimit29% == x%xcoord%y%ycoord% %action%
+if %walllimit30% == x%xcoord%y%ycoord% %action%
+if %walllimit31% == x%xcoord%y%ycoord% %action%
+if %walllimit32% == x%xcoord%y%ycoord% %action%
+if %walllimit33% == x%xcoord%y%ycoord% %action%
+if %walllimit34% == x%xcoord%y%ycoord% %action%
+if %walllimit35% == x%xcoord%y%ycoord% %action%
+if %walllimit36% == x%xcoord%y%ycoord% %action%
+if %walllimit37% == x%xcoord%y%ycoord% %action%
+if %walllimit38% == x%xcoord%y%ycoord% %action%
+if %walllimit39% == x%xcoord%y%ycoord% %action%
+if %walllimit40% == x%xcoord%y%ycoord% %action%
+if %walllimit41% == x%xcoord%y%ycoord% %action%
+if %walllimit42% == x%xcoord%y%ycoord% %action%
+if %walllimit43% == x%xcoord%y%ycoord% %action%
+if %walllimit44% == x%xcoord%y%ycoord% %action%
+if %walllimit45% == x%xcoord%y%ycoord% %action%
+if %walllimit46% == x%xcoord%y%ycoord% %action%
+if %walllimit47% == x%xcoord%y%ycoord% %action%
+if %walllimit48% == x%xcoord%y%ycoord% %action%
+if %walllimit49% == x%xcoord%y%ycoord% %action%
+if %walllimit50% == x%xcoord%y%ycoord% %action%
+if %walllimit51% == x%xcoord%y%ycoord% %action%
+if %walllimit52% == x%xcoord%y%ycoord% %action%
+if %walllimit53% == x%xcoord%y%ycoord% %action%
+if %walllimit54% == x%xcoord%y%ycoord% %action%
+if %walllimit55% == x%xcoord%y%ycoord% %action%
+if %walllimit56% == x%xcoord%y%ycoord% %action%
+if %walllimit57% == x%xcoord%y%ycoord% %action%
+if %walllimit58% == x%xcoord%y%ycoord% %action%
+if %walllimit59% == x%xcoord%y%ycoord% %action%
+if %walllimit60% == x%xcoord%y%ycoord% %action%
+if %walllimit61% == x%xcoord%y%ycoord% %action%
+if %walllimit62% == x%xcoord%y%ycoord% %action%
+if %walllimit63% == x%xcoord%y%ycoord% %action%
+if %walllimit64% == x%xcoord%y%ycoord% %action%
+if %walllimit65% == x%xcoord%y%ycoord% %action%
+if %walllimit66% == x%xcoord%y%ycoord% %action%
+if %walllimit67% == x%xcoord%y%ycoord% %action%
+if %walllimit68% == x%xcoord%y%ycoord% %action%
+if %walllimit69% == x%xcoord%y%ycoord% %action%
+if %walllimit70% == x%xcoord%y%ycoord% %action%
+if %walllimit71% == x%xcoord%y%ycoord% %action%
+if %walllimit72% == x%xcoord%y%ycoord% %action%
+if %walllimit73% == x%xcoord%y%ycoord% %action%
+if %walllimit74% == x%xcoord%y%ycoord% %action%
+if %walllimit75% == x%xcoord%y%ycoord% %action%
+if %walllimit76% == x%xcoord%y%ycoord% %action%
+if %walllimit77% == x%xcoord%y%ycoord% %action%
+if %walllimit78% == x%xcoord%y%ycoord% %action%
+if %walllimit79% == x%xcoord%y%ycoord% %action%
+if %walllimit80% == x%xcoord%y%ycoord% %action%
+if %walllimit81% == x%xcoord%y%ycoord% %action%
+if %walllimit82% == x%xcoord%y%ycoord% %action%
+if %walllimit83% == x%xcoord%y%ycoord% %action%
+if %walllimit84% == x%xcoord%y%ycoord% %action%
+if %walllimit85% == x%xcoord%y%ycoord% %action%
+if %walllimit86% == x%xcoord%y%ycoord% %action%
+if %walllimit87% == x%xcoord%y%ycoord% %action%
+if %walllimit88% == x%xcoord%y%ycoord% %action%
+if %walllimit89% == x%xcoord%y%ycoord% %action%
+if %walllimit90% == x%xcoord%y%ycoord% %action%
+if %walllimit91% == x%xcoord%y%ycoord% %action%
+if %walllimit92% == x%xcoord%y%ycoord% %action%
+if %walllimit93% == x%xcoord%y%ycoord% %action%
+if %walllimit94% == x%xcoord%y%ycoord% %action%
+if %walllimit95% == x%xcoord%y%ycoord% %action%
+if %walllimit96% == x%xcoord%y%ycoord% %action%
+if %walllimit97% == x%xcoord%y%ycoord% %action%
+if %walllimit98% == x%xcoord%y%ycoord% %action%
+if %walllimit99% == x%xcoord%y%ycoord% %action%
+if %walllimit100% == x%xcoord%y%ycoord% %action%
+if %walllimit101% == x%xcoord%y%ycoord% %action%
+if %walllimit102% == x%xcoord%y%ycoord% %action%
+if %walllimit103% == x%xcoord%y%ycoord% %action%
+if %walllimit104% == x%xcoord%y%ycoord% %action%
+if %walllimit105% == x%xcoord%y%ycoord% %action%
+if %walllimit106% == x%xcoord%y%ycoord% %action%
+if %walllimit107% == x%xcoord%y%ycoord% %action%
+if %walllimit108% == x%xcoord%y%ycoord% %action%
+if %walllimit109% == x%xcoord%y%ycoord% %action%
+if %walllimit110% == x%xcoord%y%ycoord% %action%
+if %walllimit111% == x%xcoord%y%ycoord% %action%
+if %walllimit112% == x%xcoord%y%ycoord% %action%
+if %walllimit113% == x%xcoord%y%ycoord% %action%
+if %walllimit114% == x%xcoord%y%ycoord% %action%
+if %walllimit115% == x%xcoord%y%ycoord% %action%
+if %walllimit116% == x%xcoord%y%ycoord% %action%
+if %walllimit117% == x%xcoord%y%ycoord% %action%
+if %walllimit118% == x%xcoord%y%ycoord% %action%
+if %walllimit119% == x%xcoord%y%ycoord% %action%
+if %walllimit120% == x%xcoord%y%ycoord% %action%
+if %walllimit121% == x%xcoord%y%ycoord% %action%
+if %walllimit123% == x%xcoord%y%ycoord% %action%
+if %walllimit124% == x%xcoord%y%ycoord% %action%
+if %walllimit125% == x%xcoord%y%ycoord% %action%
+if %walllimit126% == x%xcoord%y%ycoord% %action%
+if %walllimit127% == x%xcoord%y%ycoord% %action%
+if %walllimit128% == x%xcoord%y%ycoord% %action%
+if %walllimit129% == x%xcoord%y%ycoord% %action%
+if %walllimit130% == x%xcoord%y%ycoord% %action%
+if %walllimit131% == x%xcoord%y%ycoord% %action%
+if %walllimit132% == x%xcoord%y%ycoord% %action%
+if %walllimit133% == x%xcoord%y%ycoord% %action%
+if %walllimit134% == x%xcoord%y%ycoord% %action%
+if %walllimit135% == x%xcoord%y%ycoord% %action%
+if %walllimit136% == x%xcoord%y%ycoord% %action%
+if %walllimit137% == x%xcoord%y%ycoord% %action%
+if %walllimit138% == x%xcoord%y%ycoord% %action%
+if %walllimit139% == x%xcoord%y%ycoord% %action%
+if %walllimit140% == x%xcoord%y%ycoord% %action%
+if %walllimit150% == x%xcoord%y%ycoord% %action%
+if %walllimit151% == x%xcoord%y%ycoord% %action%
+if %walllimit152% == x%xcoord%y%ycoord% %action%
+if %walllimit153% == x%xcoord%y%ycoord% %action%
+if %walllimit154% == x%xcoord%y%ycoord% %action%
+if %walllimit155% == x%xcoord%y%ycoord% %action%
+if %walllimit156% == x%xcoord%y%ycoord% %action%
+if %walllimit157% == x%xcoord%y%ycoord% %action%
+if %walllimit158% == x%xcoord%y%ycoord% %action%
+if %walllimit159% == x%xcoord%y%ycoord% %action%
+if %walllimit160% == x%xcoord%y%ycoord% %action%
+if %walllimit161% == x%xcoord%y%ycoord% %action%
+if %walllimit162% == x%xcoord%y%ycoord% %action%
+if %walllimit163% == x%xcoord%y%ycoord% %action%
+if %walllimit164% == x%xcoord%y%ycoord% %action%
+if %walllimit165% == x%xcoord%y%ycoord% %action%
 goto displaysetup
