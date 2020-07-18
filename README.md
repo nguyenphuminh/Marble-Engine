@@ -4,7 +4,7 @@
 </div>
 
 ## What is Marble ?
-Marble is a simple, lightweight maze game engine created in Batch. You can create simple maze games with Marble.
+Marble is a simple, lightweight maze game engine created in Batch. You can create simple maze games or Tic Tac Toe games with Marble.
 <br/>
 This is the full source code of Marble, hope you like it!
 
