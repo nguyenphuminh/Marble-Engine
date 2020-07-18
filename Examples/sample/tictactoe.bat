@@ -247,16 +247,31 @@ if %moves% EQU 9 goto draw
 goto Start
 :win
 cls
-echo                                                          Congratulation, you win!!!
-pause
+echo                     Congratulation, you win!!!
+echo.
+echo.
+echo.
+echo.
+echo                    Press any key to continue...
+pause >nul
 goto game
 :lose
 cls
-echo                                                     You lost!, try to be better next time. 
-pause
+echo                 You lost!, try to be better next time. 
+echo.
+echo.
+echo.
+echo.
+echo                    Press any key to continue...
+pause >nul
 goto game 
 :draw
 cls
-echo                                                  It's a draw, look like no one is the winner 
-pause
+echo               It's a draw, look like no one is the winner 
+echo.
+echo.
+echo.
+echo.
+echo                    Press any key to continue...
+pause >nul
 goto game

@@ -4,8 +4,6 @@ call redofloor.bat
 for /L %%A in (1,1,165) DO (set walllimit%%A=0)
 if "%xspawn%" == "" set xspawn=1
 if "%yspawn%" == "" set yspawn=1
-color %color%
-title %title%
 mode con cols=%width% lines=%height%
 if "%soption%" == "tictactoe" goto tictactoe
 :initsetup
