@@ -14,7 +14,7 @@ This is the full source code of Marble, hope you like it!
     call engine.bat
 
 <br/>
-### You need to use these commands to declare variables for the game in the core.bat file (Remember to put the core.bat file in the same directory as the engine.bat file).
+<b>You need to use these commands to declare variables for the game in the core.bat file (Remember to put the core.bat file in the same directory as the engine.bat file).</b>
 <br/>
 
     ::Set the type of game you want to make, you can change the value to tictactoe to create a Tic Tac Toe game
@@ -48,14 +48,16 @@ This is the full source code of Marble, hope you like it!
 <b>The character, wall, floortexture, xspawn, yspawn, walllimit(number), winningpost are necessary variables which are not pre-declared.</b> 
 
 <br/>
-### Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
+<b>Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:</b>
 
     sound play "soundfile"
 
 <br/>
-### Marble's ERROR NAME(s)
+<b>Marble's ERROR NAME(s)</b>
+    
 <br/>
 <br/>
+    
 |  Name   |   Meaning          |
 | ------- | ------------------ |
 |  0a1    | Missing files      |
