@@ -52,8 +52,9 @@ This is the full source code of Marble, hope you like it!
 
     sound play "soundfile"
 
-<br/>
-<b>Marble's ERROR NAME(s)</b>
+
+## Marble's ERROR NAME(s)
+<b>If you don't know, Marble can gives errors, these are error's name so that you can understand.</b>
     
 <br/>
 <br/>
