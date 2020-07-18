@@ -1,4 +1,7 @@
 @echo off
+:preload
+if not exist "core.bat" goto filesmissing
+if not exist "redofloor.bat" goto filesmissing
 call core.bat
 call redofloor.bat
 for /L %%A in (1,1,165) DO (set walllimit%%A=0)
@@ -6,6 +9,7 @@ if "%xspawn%" == "" set xspawn=1
 if "%yspawn%" == "" set yspawn=1
 mode con cols=%width% lines=%height%
 if "%soption%" == "tictactoe" goto tictactoe
+if "%maze_scenewhenwin%" == "" set maze_scenewhenwin=initsetup
 :initsetup
 set xcoord=%xspawn%
 set ycoord=%yspawn%
@@ -14,7 +18,7 @@ cls
 call redofloor.bat
 call core.bat
 set x%xcoord%y%ycoord%=%character%
-if %winningpost% == x%xcoord%y%ycoord% goto win
+if %winningpost% == x%xcoord%y%ycoord% goto %maze_scenewhenwin%
 :display
 cls
 echo.
@@ -59,12 +63,6 @@ set /a xcoord=%xcoord%+1
 if %xcoord% GTR 11 set /a xcoord=%xcoord%-1
 set action=set /a xcoord=%xcoord%-1
 goto wallaction
-:win
-cls
-echo You win
-sound play %soundtoplay%
-pause
-goto initsetup
 :tictactoe
 call tictactoe.bat
 :wallaction
@@ -225,3 +223,9 @@ if %walllimit163% == x%xcoord%y%ycoord% %action%
 if %walllimit164% == x%xcoord%y%ycoord% %action%
 if %walllimit165% == x%xcoord%y%ycoord% %action%
 goto displaysetup
+:filesmissing
+cls
+echo. The engine can not boot up successfully due to missing necessary files.
+echo.
+echo. ERROR NAME: 0a1
+pause >nul

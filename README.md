@@ -19,8 +19,6 @@ You need to use these commands to declare variables for the game in the core.bat
 
     ::Set the type of game you want to make, you can change the value to tictactoe to create a Tic Tac Toe game
     set soption=
-    ::Set the sound played when you win
-    set soundwhenwin=
     ::Set the winning position
     set winningpost=
     ::Set the character model  
@@ -37,8 +35,30 @@ You need to use these commands to declare variables for the game in the core.bat
     set yspawn=
     ::Asign walllimit1 variable to x2y3 to make x2y3 a wall. Wall limits are from walllimit1 to walllimit165
     set walllimit1=
+    ::Go to a function when you win in the maze game
+    set maze_scenewhenwin=
+    ::Go to a function when you win in the tic tac toe game
+    set ttt_scenewhenwin=
+    ::Go to a function when you lose in the tic tac toe game
+    set ttt_scenewhenlose=
+    ::Go to a function when you draw in the tic tac toe game
+    set ttt_scenewhendraw=
 
-<b>Note: Position variables are from x1y1 to x11y15, Walllimit variable are from walllimit1 to walllimit165</b>
+<b>Note: Position variables are from x1y1 to x11y15, Walllimit variable are from walllimit1 to walllimit165.</b>
+<b>The character, wall, floortexture, xspawn, yspawn, walllimit(number), winningpost are necessary variables which are not pre-declared.</b> 
+
+<br/>
+Marble has a plugin called "SOUND.EXE" which comes with it. It is used to generate sound effects. You can use it with this command:
+sound play "soundfile"
+
+<br/>
+Marble's ERROR NAME(s)
+
+
+|  Name   |   Meaning          |
+| ------- | ------------------ |
+|  0a1    | Missing files      |
+
 
 ## Development Team
 <li>Lead Developer: Nguyen Phu Minh</li>

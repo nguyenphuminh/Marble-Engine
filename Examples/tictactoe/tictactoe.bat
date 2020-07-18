@@ -1,4 +1,7 @@
-:game
+:tictactoe
+if "%ttt_scenewhenwin%" == "" set ttt_scenewhenwin=tictactoe
+if "%ttt_scenewhenlose%" == "" set ttt_scenewhenlose=tictactoe
+if "%ttt_scenewhendraw%" == "" set ttt_scenewhendraw=tictactoe
 cls
 set a1=1
 set a2=2
@@ -247,31 +250,10 @@ if %moves% EQU 9 goto draw
 goto Start
 :win
 cls
-echo                     Congratulation, you win!!!
-echo.
-echo.
-echo.
-echo.
-echo                    Press any key to continue...
-pause >nul
-goto game
+goto %ttt_scenewhenwin%
 :lose
 cls
-echo                 You lost!, try to be better next time. 
-echo.
-echo.
-echo.
-echo.
-echo                    Press any key to continue...
-pause >nul
-goto game 
+goto %ttt_scenewhenlose%
 :draw
 cls
-echo               It's a draw, look like no one is the winner 
-echo.
-echo.
-echo.
-echo.
-echo                    Press any key to continue...
-pause >nul
-goto game
+goto %ttt_scenewhendraw%
