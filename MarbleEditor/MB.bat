@@ -61,19 +61,9 @@ echo.
 echo                                                                   Nguyen Phu Minh
 echo.
 echo.
-echo.                                                                      Producer:
 echo.
-echo.                                                                       NPMdev
-echo.
-echo.
-echo                                                                   Special thanks to:
-echo.
-echo.                                                                    Nguyen Minh Duc
-echo.
-echo                                                                 For testing our engine
 echo.                                        
-echo.    
-echo                                                                    PHOENIX 2D ENGINE
+echo.
 echo.
 echo.                                                              Press any key to continue...
 echo.                                                                                   
