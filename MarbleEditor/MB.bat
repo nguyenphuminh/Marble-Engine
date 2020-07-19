@@ -50,8 +50,35 @@ cls
 echo.
 echo.
 echo.
-echo. This engine was created by Nguyen Phu Minh
-pause >nul
+echo.
+echo.
+echo                                                                       =Staff=
+echo.
+echo.
+echo.
+echo                                                                     Programmer:
+echo.
+echo                                                                   Nguyen Phu Minh
+echo.
+echo.
+echo.                                                                      Producer:
+echo.
+echo.                                                                       NPMdev
+echo.
+echo.
+echo                                                                   Special thanks to:
+echo.
+echo.                                                                    Nguyen Minh Duc
+echo.
+echo                                                                 For testing our engine
+echo.                                        
+echo.    
+echo                                                                    PHOENIX 2D ENGINE
+echo.
+echo.                                                              Press any key to continue...
+echo.                                                                                   
+pause >nul                             
+goto menu
 
 :createnew
 cls
@@ -75,7 +102,7 @@ echo.    =                                                                      
 echo.    =                                                           2.Create a 2D maze game                                                                 =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
+echo.    =                                                                   3.Exit                                                                          =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
@@ -89,7 +116,8 @@ echo.    =                                                                      
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
 echo.    ===================================================================================================================================================== 
-@CHOICE /C:12 /N
+@CHOICE /C:123 /N
+if errorlevel 3 goto menu
 if errorlevel 2 goto createmaze
 if errorlevel 1 goto createttt
 
@@ -213,12 +241,14 @@ goto menu
 start tictactoe.bat
 goto editor1
 
-:run
+:run2
 start game.bat
 goto editor2
 
 :changecolor
 cls
+echo.
+echo.  Type quit to quit
 echo.
 echo.  COLOR HEX CODE
 echo.
@@ -234,6 +264,7 @@ echo.
 echo.
 echo Enter 2 color hex code to create a color palette:
 set /p color=
+if "%color%" == "quit" goto editor1
 echo set color=%color%>>core.bat
 goto editor1
 
@@ -241,9 +272,12 @@ goto editor1
 cls
 echo.
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo Enter game title:
 set /p title=
+if "%title%" == "quit" goto editor1
 echo set title=%title%>>core.bat
 goto editor1
 
@@ -251,9 +285,12 @@ goto editor1
 cls
 echo.
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo Enter game's console's height:
 set /p height=
+if "%height%" == "quit" goto editor1
 echo set height=%height%>>core.bat
 goto editor1
 
@@ -261,9 +298,12 @@ goto editor1
 cls
 echo.
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo Enter game's console's width:
 set /p width=
+if "%width%" == "quit" goto editor1
 echo set width=%width%>>core.bat
 goto editor1
 
@@ -283,6 +323,8 @@ goto menu
 :changecolor2
 cls
 echo.
+echo.  Type quit to quit
+echo.
 echo.  COLOR HEX CODE
 echo.
 echo. 0 = Black       8 = Gray
@@ -297,36 +339,46 @@ echo.
 echo.
 echo Enter 2 color hex code to create a color palette:
 set /p color=
+if "%color%" == "quit" goto editor2
 echo set color=%color%>>core.bat
 goto editor2
 
 :changetitle2
 cls
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo.
 echo Enter game title:
 set /p title=
+if "%title%" == "quit" goto editor2
 echo set title=%title%>>core.bat
 goto editor2
 
 :changeheight2
 cls
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo.
 echo Enter game's console's height:
 set /p height=
+if "%height%" == "quit" goto editor2
 echo set height=%height%>>core.bat
 goto editor2
 
 :changewidth2
 cls
 echo.
+echo.  Type quit to quit
+echo.
 echo.
 echo.
 echo Enter game's console's width:
 set /p width=
+if "%width%" == "quit" goto editor2
 echo set width=%width%>>core.bat
 goto editor2
 
@@ -501,9 +553,10 @@ echo                    x1y15 x2y15 x3y15 x4y15 x5y15 x6y15 x7y15 x8y15 x9y15 x1
 echo.
 set /p position=Position:
 if "%position%" == "quit" goto editor2
-set /p texture=Wall ids (walllimit1, walllimit2, walllimit3,..., walllimit165):
+set /p wallid=Wall ids (walllimit1, walllimit2, walllimit3,..., walllimit165):
 if "%wallid%" == "quit" goto editor2
 echo set %wallid%=%position%>>core.bat
+echo set %position%=#>>core.bat
 goto changewall
 
 :changepost
@@ -516,7 +569,7 @@ echo.                  1.Spawn position
 echo.
 echo.                  2.Win position
 echo.
-echo.                  5.Exit
+echo.                  3.Exit
 echo.
 @CHOICE /C:123 /N
 if errorlevel 3 goto editor2
@@ -534,8 +587,12 @@ set /p xspawn=X Position:
 if "%xspawn%" == "quit" goto editor2
 set /p yspawn=Y Position:
 if "%yspawn%" == "quit" goto editor2
+echo %xspawn%
+echo %yspawn%
+pause
 echo set xspawn=%xspawn%>>core.bat
 echo set yspawn=%yspawn%>>core.bat
+pause
 goto changepositionspawn
 
 :changepositionwin
@@ -564,4 +621,5 @@ echo.
 set /p winningpost=Win Position:
 if "%winningpost%" == "quit" goto editor2
 echo set winningpost=%winningpost%>>core.bat
+echo set %winningpost%=$>>core.bat
 goto changepositionwin

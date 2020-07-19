@@ -4,6 +4,8 @@ if not exist "core.bat" goto filesmissing
 if not exist "redofloor.bat" goto filesmissing
 call core.bat
 call redofloor.bat
+color %color%
+title %title%
 for /L %%A in (1,1,165) DO (set walllimit%%A=0)
 if "%xspawn%" == "" set xspawn=1
 if "%yspawn%" == "" set yspawn=1
@@ -18,7 +20,7 @@ cls
 call redofloor.bat
 call core.bat
 set x%xcoord%y%ycoord%=%character%
-if %winningpost% == x%xcoord%y%ycoord% (
+if "%winningpost%" == "x%xcoord%y%ycoord%" (
 	sound play win.wav
 	goto %maze_scenewhenwin%
 )
