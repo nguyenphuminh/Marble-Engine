@@ -24,7 +24,7 @@ echo.    =                                                                      
 echo.    =                                                             3.Load existed project                                                                =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
-echo.    =                                                             4.Credit                                                                              =
+echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
@@ -38,36 +38,10 @@ echo.    =                                                                      
 echo.    =                                                                                                                                                   =
 echo.    =                                                                                                                                                   =
 echo.    =====================================================================================================================================================
-@CHOICE /C:1234 /N
-if errorlevel 4 goto credit
+@CHOICE /C:123 /N
 if errorlevel 3 goto load
 if errorlevel 2 goto delete
 if errorlevel 1 goto createnew
-goto menu
-
-:credit
-cls
-echo.
-echo.
-echo.
-echo.
-echo.
-echo                                                                       =Staff=
-echo.
-echo.
-echo.
-echo                                                                     Programmer:
-echo.
-echo                                                                   Nguyen Phu Minh
-echo.
-echo.
-echo.
-echo.                                        
-echo.
-echo.
-echo.                                                              Press any key to continue...
-echo.                                                                                   
-pause >nul                             
 goto menu
 
 :createnew
