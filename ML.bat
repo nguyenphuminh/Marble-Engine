@@ -1,6 +1,6 @@
 @echo off
 title Marble Launcher
-color 57
+color 6f
 mode con cols=157 lines=35
 :menu
 cls
