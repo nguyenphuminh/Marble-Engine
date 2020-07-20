@@ -1,6 +1,9 @@
 <div align="center">
     <img src="Resources/Branding/logo.png">
     <div><b>A simple, lightweight maze game engine created in Batch</b></div>
+    <br/>
+    <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
+    <a href="https://circleci.com/gh/nguyenphuminh/Marble-Engine"><img src="https://circleci.com/gh/nguyenphuminh/Marble-Engine.svg?style=shield&circle-token=:circle-token"/></a>
 </div>
 
 ## What is Marble ?
