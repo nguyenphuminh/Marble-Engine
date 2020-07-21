@@ -73,7 +73,7 @@ goto menu
 :runeditor
 cls
 cd "MarbleEditor"
-start MarbleEditor.exe
+start MB.bat
 cd ../
 goto menu
 
