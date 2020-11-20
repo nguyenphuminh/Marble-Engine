@@ -3,7 +3,11 @@
     <div><b>A simple, lightweight maze game engine created in Batch</b></div>
     <br/>
     <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
-    <a href="https://circleci.com/gh/nguyenphuminh/Marble-Engine"><img src="https://circleci.com/gh/nguyenphuminh/Marble-Engine.svg?style=shield&circle-token=:circle-token"/></a>
+    <a href="https://circleci.com/gh/nguyenphuminh/Marble-Engine"><img src="https://circleci.com/gh/nguyenphuminh/Marble-Engine.svg?style=shield&circle-token=:circle-token"/>
+    </a>
+    <a href="https://github.com/nguyenphuminh/Marble-Engine/search?l=batchfile"><img alt="language" src="https://img.shields.io/badge/language-Batchfile-purple.svg"></a>
+    <a href="#"><img src="https://img.shields.io/github/downloads/nguyenphuminh/Marble-Engine/total.svg"/></a>
+    <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/main/.github/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 </div>
 
 ## What is Marble ?
@@ -57,9 +61,7 @@ This is the full source code of Marble, hope you like it!
 
 
 ## Marble's ERROR NAME(s)
-<b>If you don't know, Marble can gives errors, these are error's name so that you can understand.</b>
-    
-<br/>
+<b>If you don't know, Marble can gives errors, these are error's name so that you can understand.</b>    
 <br/>
     
 |  Name   |   Meaning          |
@@ -67,13 +69,8 @@ This is the full source code of Marble, hope you like it!
 |  0a1    | Missing files      |
 
 
-## Development Team
-<li>Lead Developer: Nguyen Phu Minh</li>
-<li>Tester: Nguyen Phu Minh</li>
-<li>Content Writer: Nguyen Phu Minh</li>
-
 ## No coding editor
-That's right. Marble has a built-in no coding editor. But you can still use the normal engine, the no coding editor is just an optional path to approach Marble
+That's right. Marble has a built-in no coding editor. But you can still use the normal engine, the no coding editor is just an optional path to approach Marble.
 
 ## Contributing guidelines
 Please read the contributing guidelines <a href="https://github.com/nguyenphuminh/Marble-Engine/tree/master/.github/CONTRIBUTING.md">here</a>
