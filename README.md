@@ -7,7 +7,7 @@
     </a>
     <a href="https://github.com/nguyenphuminh/Marble-Engine/search?l=batchfile"><img alt="language" src="https://img.shields.io/badge/language-Batchfile-purple.svg"></a>
     <a href="#"><img src="https://img.shields.io/github/downloads/nguyenphuminh/Marble-Engine/total.svg"/></a>
-    <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/main/.github/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+    <a href="https://github.com/nguyenphuminh/Marble-Engine/blob/master/.github/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 </div>
 
 ## What is Marble ?
