@@ -1,6 +1,6 @@
 @echo off
 title Marble Editor
-color 6f
+color 57
 mode con cols=157 lines=35
 :menu
 cls

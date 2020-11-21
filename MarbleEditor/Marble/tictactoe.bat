@@ -262,7 +262,6 @@ goto %ttt_scenewhenlose%
 :draw
 cls
 goto %ttt_scenewhendraw%
-
 :winscene
 sound play win.wav
 echo. You win!
@@ -273,7 +272,6 @@ sound play lose.wav
 echo. You lose!
 pause
 goto tictactoe
-
 :drawscene
 sound play draw.wav
 echo. Draw!

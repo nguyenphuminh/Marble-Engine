@@ -1,6 +1,6 @@
 @echo off
 title Marble Launcher
-color 6f
+color 57
 mode con cols=157 lines=35
 :menu
 cls
@@ -9,7 +9,7 @@ echo.    =                    =                                                 
 echo.    =   Marble Launcher  =                    Codeless - Opensource - Free -Easy to use       +                                                         =
 echo.    =                    =                                                                   +                                                          =
 echo.    =++++++++++++++++++++=                                                                  +                                                           =
-echo.    =                    =                                                                 +      Wanna create games now? We got you covered!           =
+echo.    =                    =                                                                 +     Wanna create games now? We've got you covered!         =
 echo.    =                    =                                                                +                                                             =
 echo.    =                    ================================================================================================================================
 echo.    =                    =                                                                                                                              =
@@ -23,26 +23,38 @@ echo.    =                    =                                                 
 echo.    =                    =                                           2.Open Marble's Engine Folder                                                      =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
-echo.    =                    =                                                  3.Run Examples                                                              =
+echo.    =                    =                                              3.Open projects' folder                                                         =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
-echo.    =                    =                                                     4.Credit                                                                 =
+echo.    =                    =                                                  4.Run Examples                                                              =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                     5.Credit                                                                 =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
-echo.    =                    =                                                                                                                              =
-echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                     6.Github                                                                 =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
 echo.    =                    =                                                                                                                              =
 echo.    =====================================================================================================================================================
-@CHOICE /C:1234 /N
-if errorlevel 4 goto credit
-if errorlevel 3 goto runexample
+@CHOICE /C:123456 /N
+if errorlevel 6 goto github
+if errorlevel 5 goto credit
+if errorlevel 4 goto runexample
+if errorlevel 3 goto openprojects
 if errorlevel 2 goto runengine
 if errorlevel 1 goto runeditor
+goto menu
+
+:openprojects
+cd "MarbleEditor"
+start Projects
+cd ../
+goto menu
+
+:github
+start https://github.com/nguyenphuminh/Marble-Engine
 goto menu
 
 :credit
@@ -51,8 +63,6 @@ echo.
 echo.
 echo.
 echo.
-echo.
-echo                                                                       =Staff=
 echo.
 echo.
 echo.
@@ -65,7 +75,7 @@ echo.
 echo.                                        
 echo.
 echo.
-echo.                                                              Press any key to continue...
+echo.                                                             Press any key to continue...
 echo.                                                                                   
 pause >nul                             
 goto menu
@@ -73,7 +83,7 @@ goto menu
 :runeditor
 cls
 cd "MarbleEditor"
-start MB.bat
+start MarbleEditor.exe
 cd ../
 goto menu
 
@@ -85,38 +95,38 @@ goto menu
 :runexample
 cls
 echo.    =====================================================================================================================================================
-echo.    =                                                                Marble Launcher                                                                    =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                         1.Open a Tic Tac Toe example                                                              =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                          2.Open a Maze game example                                                               =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                    3.Exit                                                                         =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
-echo.    =                                                                                                                                                   =
+echo.    =                    =                                                                     +                                                        =
+echo.    =   Marble Launcher  =                    Codeless - Opensource - Free -Easy to use       +                                                         =
+echo.    =                    =                                                                   +                                                          =
+echo.    =++++++++++++++++++++=                                                                  +                                                           =
+echo.    =                    =                                                                 +     Wanna create games now? We've got you covered!         =
+echo.    =                    =                                                                +                                                             =
+echo.    =                    ================================================================================================================================
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                          1.Open a Tic Tac Toe example                                                        =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                           2.Open a Maze game example                                                         =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                   3.Go back                                                                  =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                     		                                                                 =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
+echo.    =                    =                                                                                                                              =
 echo.    =====================================================================================================================================================
 @CHOICE /C:123 /N
 if errorlevel 3 goto menu
